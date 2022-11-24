@@ -3,14 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRouter:Routes=[
+  {
+    path:"",
+    component:AdminLoginComponent
+  }
+]
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRouter)
   ],
   providers: [],
   bootstrap: [AppComponent]
