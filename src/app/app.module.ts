@@ -10,6 +10,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { BookEntryComponent } from './book-entry/book-entry.component';
 import { ViewBooksComponent } from './view-books/view-books.component';
 import { SearchComponent } from './search/search.component';
+import { EditComponent } from './edit/edit.component';
 
 const myRouter:Routes=[
   {
@@ -35,6 +36,10 @@ const myRouter:Routes=[
   {
     path:"search",
     component:SearchComponent
+  },
+  {
+    path:"edit",
+    component:EditComponent
   }
 ]
 
@@ -46,7 +51,8 @@ const myRouter:Routes=[
     UserLoginComponent,
     BookEntryComponent,
     ViewBooksComponent,
-    SearchComponent
+    SearchComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
