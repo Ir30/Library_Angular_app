@@ -13,6 +13,7 @@ import { SearchComponent } from './search/search.component';
 import { EditComponent } from './edit/edit.component';
 import { DeleteComponent } from './delete/delete.component';
 import { IssueComponent } from './issue/issue.component';
+import { NavComponent } from './nav/nav.component';
 
 const myRouter:Routes=[
   {
@@ -64,7 +65,8 @@ const myRouter:Routes=[
     SearchComponent,
     EditComponent,
     DeleteComponent,
-    IssueComponent
+    IssueComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
