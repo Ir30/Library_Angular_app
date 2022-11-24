@@ -9,6 +9,7 @@ import { UserSignupComponent } from './user-signup/user-signup.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { BookEntryComponent } from './book-entry/book-entry.component';
 import { ViewBooksComponent } from './view-books/view-books.component';
+import { SearchComponent } from './search/search.component';
 
 const myRouter:Routes=[
   {
@@ -30,6 +31,10 @@ const myRouter:Routes=[
   {
     path:"book_view",
     component:ViewBooksComponent
+  },
+  {
+    path:"search",
+    component:SearchComponent
   }
 ]
 
@@ -40,7 +45,8 @@ const myRouter:Routes=[
     UserSignupComponent,
     UserLoginComponent,
     BookEntryComponent,
-    ViewBooksComponent
+    ViewBooksComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
