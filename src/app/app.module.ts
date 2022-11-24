@@ -12,6 +12,7 @@ import { ViewBooksComponent } from './view-books/view-books.component';
 import { SearchComponent } from './search/search.component';
 import { EditComponent } from './edit/edit.component';
 import { DeleteComponent } from './delete/delete.component';
+import { IssueComponent } from './issue/issue.component';
 
 const myRouter:Routes=[
   {
@@ -45,6 +46,10 @@ const myRouter:Routes=[
   {
     path:"delete",
     component:DeleteComponent
+  },
+  {
+    path:"issue",
+    component:IssueComponent
   }
 ]
 
@@ -58,7 +63,8 @@ const myRouter:Routes=[
     ViewBooksComponent,
     SearchComponent,
     EditComponent,
-    DeleteComponent
+    DeleteComponent,
+    IssueComponent
   ],
   imports: [
     BrowserModule,
