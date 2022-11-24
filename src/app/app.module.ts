@@ -11,6 +11,7 @@ import { BookEntryComponent } from './book-entry/book-entry.component';
 import { ViewBooksComponent } from './view-books/view-books.component';
 import { SearchComponent } from './search/search.component';
 import { EditComponent } from './edit/edit.component';
+import { DeleteComponent } from './delete/delete.component';
 
 const myRouter:Routes=[
   {
@@ -40,6 +41,10 @@ const myRouter:Routes=[
   {
     path:"edit",
     component:EditComponent
+  },
+  {
+    path:"delete",
+    component:DeleteComponent
   }
 ]
 
@@ -52,7 +57,8 @@ const myRouter:Routes=[
     BookEntryComponent,
     ViewBooksComponent,
     SearchComponent,
-    EditComponent
+    EditComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,
