@@ -7,6 +7,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { UserSignupComponent } from './user-signup/user-signup.component';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { BookEntryComponent } from './book-entry/book-entry.component';
 
 const myRouter:Routes=[
   {
@@ -20,6 +21,10 @@ const myRouter:Routes=[
   {
     path:"user_login",
     component:UserLoginComponent
+  },
+  {
+    path:"entry",
+    component:BookEntryComponent
   }
 ]
 
@@ -28,7 +33,8 @@ const myRouter:Routes=[
     AppComponent,
     AdminLoginComponent,
     UserSignupComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    BookEntryComponent
   ],
   imports: [
     BrowserModule,
