@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class EditComponent {
 
+  BookTitle=""
+
+  readValue=()=>{
+    let data={
+      "BookTitle":this.BookTitle
+    }
+    console.log(data)
+  }
 }

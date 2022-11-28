@@ -11,7 +11,7 @@
                 <div class="row  mt-3">
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label ">Name</label>
-                        <input type="text" class="form-control">
+                        <input name="Name" [(ngModel)]="Name" type="text" class="form-control">
                     </div>
                 </div>
 
@@ -19,7 +19,7 @@
 
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label">Book Title</label>
-                        <input type="text" class="form-control">
+                        <input name="Book_Title" [(ngModel)]="Book_Title" type="text" class="form-control">
                     </div>
 
                 </div>
@@ -28,7 +28,7 @@
 
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label">Date Of Issue</label>
-                        <input type="date" name="" id="" class="form-control">
+                        <input name="Date_Of_Issue" [(ngModel)]="Date_Of_Issue" type="date" name="" id="" class="form-control">
                     </div>
                     
                 </div>
@@ -36,8 +36,8 @@
 
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label">Membership No</label>
-                        <input type="text" class="form-control">
-                        <button class="btn btn-success mt-3">Register</button>
+                        <input name="Membership_No" [(ngModel)]="Membership_No" type="text" class="form-control">
+                        <button (click)="readValue()" class="btn btn-success mt-3">Register</button>
                     </div>
                     
                 </div>

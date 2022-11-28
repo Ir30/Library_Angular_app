@@ -14,6 +14,7 @@ import { EditComponent } from './edit/edit.component';
 import { DeleteComponent } from './delete/delete.component';
 import { IssueComponent } from './issue/issue.component';
 import { NavComponent } from './nav/nav.component';
+import { FormsModule } from '@angular/forms';
 
 const myRouter:Routes=[
   {
@@ -71,7 +72,8 @@ const myRouter:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRouter)
+    RouterModule.forRoot(myRouter),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
