@@ -9,17 +9,17 @@
                     </div>
                     <div class="form-outline mb-4">
                     <label class="form-label" for="">Username:</label>
-                      <input type="email" class="form-control" />
+                      <input name="Username" [(ngModel)]="Username" type="email" class="form-control" />
                       
                     </div>
                   
                 
                     <div class="form-outline mb-4">
                       <label class="form-label">Password</label>
-                      <input type="password"  class="form-control" />
+                      <input name="Password" [(ngModel)]="Password" type="password"  class="form-control" />
                     </div>
                     <div class="form-out-line mb-1">
-                        <button type="button" class="btn btn-primary btn-block mb-4 "routerLink="/entry">Sign in</button>
+                        <button (click)="readValue()" type="button" class="btn btn-primary btn-block mb-4 "routerLink="/entry">Sign in</button>
                     </div>
                   
                     
